@@ -31,6 +31,8 @@ setTimeout(numeriUtente, 3000);
 
 var numeriInseriti = [];
 
+var numeriComparati = [];
+
 
 function numeriUtente() {
 
@@ -43,12 +45,14 @@ function numeriUtente() {
     }
     console.log("numeri inseriti dall'utente", numeriInseriti);
 
-    // Numeri individuati e indovinati
-    if ( numeriInseriti.length == numeriCasualiTotali ) {
+    // Numeri comparati, individuati e indovinati
+    for (var i = 0; i < numeriCasuali.length, numeriInseriti.length; i++ ) {
+        var thisCasuali = numeriCasuali[i];
+        var thisInseriti = numeriInseriti[i];
 
-        if (condition) {
+        if ( thisCasuali == thisInseriti ) {
             
         }
-        
+
     }
 }
