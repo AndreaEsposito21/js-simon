@@ -42,6 +42,13 @@ function numeriUtente() {
         }
     }
     console.log("numeri inseriti dall'utente", numeriInseriti);
-}
 
-// Numeri individuati e indovinati
+    // Numeri individuati e indovinati
+    if ( numeriInseriti.length == numeriCasualiTotali ) {
+
+        if (condition) {
+            
+        }
+        
+    }
+}
