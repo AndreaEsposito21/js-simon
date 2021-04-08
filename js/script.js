@@ -46,13 +46,14 @@ function numeriUtente() {
     console.log("numeri inseriti dall'utente", numeriInseriti);
 
     // Numeri comparati, individuati e indovinati
-    for (var i = 0; i < numeriCasuali.length, numeriInseriti.length; i++ ) {
-        var thisCasuali = numeriCasuali[i];
+    for (var i = 0; i < numeriInseriti.length; i++ ) {
         var thisInseriti = numeriInseriti[i];
 
-        if ( thisCasuali == thisInseriti ) {
-            
+        if ( numeriCasuali.includes(thisInseriti) == true ) {
+            numeriComparati.push(thisInseriti);
         }
-
     }
+    console.log(numeriComparati);
+
+    alert("Ne hai indovinati " + numeriComparati.length + " e sono: " + numeriComparati);
 }
